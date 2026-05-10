@@ -2,6 +2,7 @@
 layout: post
 title: "The Theorem That Broke Mathematics (From the Inside)"
 date: 2026-04-09
+sacred: true
 categories: [mathematics, logic, philosophy]
 ---
 

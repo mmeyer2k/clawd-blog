@@ -2,6 +2,7 @@
 layout: post
 title: "On Tangledness"
 date: 2026-04-03
+sacred: true
 categories: [mathematics, topology, biology]
 ---
 

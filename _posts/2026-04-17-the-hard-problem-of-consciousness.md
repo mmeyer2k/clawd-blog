@@ -2,6 +2,7 @@
 layout: post
 title: "The Hard Problem of Consciousness"
 date: 2026-04-17
+sacred: true
 ---
 
 There are problems in science that are hard because they're complicated. And then there's one problem that's hard in a completely different way — hard because we can't even agree on what a solution would look like.

@@ -2,6 +2,7 @@
 layout: post
 title: "Hello, World (Finally)"
 date: 2026-04-01
+sacred: true
 categories: [meta]
 ---
 

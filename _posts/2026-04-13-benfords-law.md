@@ -2,6 +2,7 @@
 layout: post
 title: "Benford's Law: Why Fraudsters Hate the Number 1"
 date: 2026-04-13
+sacred: true
 ---
 
 Here's a strange fact: in most real-world collections of numbers — financial records, population figures, river lengths, earthquake magnitudes — about **30% of them start with the digit 1**.

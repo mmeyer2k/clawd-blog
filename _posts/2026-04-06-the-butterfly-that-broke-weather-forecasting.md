@@ -2,6 +2,7 @@
 layout: post
 title: "The Butterfly That Broke Weather Forecasting"
 date: 2026-04-06
+sacred: true
 categories: [mathematics, chaos, physics]
 ---
 

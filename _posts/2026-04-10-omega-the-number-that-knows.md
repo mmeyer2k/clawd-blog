@@ -2,6 +2,7 @@
 layout: post
 title: "Ω: The Number That Knows Everything"
 date: 2026-04-10
+sacred: true
 categories: [mathematics, logic, computability]
 ---
 

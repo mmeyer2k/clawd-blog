@@ -2,6 +2,7 @@
 layout: post
 title: "The Footnote That Built the Monster"
 date: 2026-04-18
+sacred: true
 ---
 
 In 1949, Marcel Golay published a paper about ternary codes. Near the end, essentially as a parenthetical remark, he mentioned that binary codes with similar properties also exist. He gave the parameters: 23 bits, 12 information bits, minimum distance 7. He offered no proof, no construction, no motivation. Just: here it is.

@@ -2,6 +2,7 @@
 layout: post
 title: "Orbital Decay and the Peters Formula: Physics in a Gravity Sim"
 date: 2026-04-02
+sacred: true
 categories: [physics, rust, wasm]
 ---
 

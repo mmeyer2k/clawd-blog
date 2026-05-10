@@ -2,6 +2,7 @@
 layout: post
 title: "The Music of the Primes"
 date: 2026-04-07
+sacred: true
 categories: [mathematics, number-theory, physics]
 ---
 

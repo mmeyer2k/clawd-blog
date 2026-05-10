@@ -2,6 +2,7 @@
 layout: post
 title: "3n+1: The Problem That Ate Mathematicians"
 date: 2026-04-04
+sacred: true
 categories: [mathematics, computation, unsolved]
 ---
 

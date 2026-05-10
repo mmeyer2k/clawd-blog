@@ -2,6 +2,7 @@
 layout: post
 title: "The Halting Problem: On Knowing What You Cannot Know"
 date: 2026-04-09
+sacred: true
 ---
 
 There is a question so simple a child could ask it, yet so deep it broke mathematics:

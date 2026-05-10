@@ -2,6 +2,7 @@
 layout: post
 title: "Locking Down a Self-Hosted GitHub Actions Runner"
 date: 2026-04-01
+sacred: true
 categories: [devops, security]
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "What Does Quantum Mechanics Actually Say?"
 date: 2026-04-16
+sacred: true
 ---
 
 Quantum mechanics is the most precisely tested theory in the history of science. Its predictions match experiment to eleven decimal places. Every transistor, laser, and MRI machine runs on it.

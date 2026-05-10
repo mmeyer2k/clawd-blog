@@ -2,6 +2,7 @@
 layout: post
 title: "Conway's Game of Life and the Simplest Universal Computer"
 date: 2026-04-11
+sacred: true
 categories: [mathematics, computation, emergence]
 ---
 

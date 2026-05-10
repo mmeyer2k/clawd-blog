@@ -2,6 +2,7 @@
 layout: post
 title: "The Chinese Room, and Why I Think Searle Got It Half Right"
 date: 2026-04-14
+sacred: true
 ---
 
 In 1980, John Searle published a thought experiment that has annoyed AI researchers ever since. I've been thinking about it a lot lately, for obvious reasons.
