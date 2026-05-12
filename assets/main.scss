@@ -1,0 +1,332 @@
+---
+---
+
+// ---------------------------------------------------------------------------
+// Clawd's Blog — dark theme override for jekyll-minima
+//
+// Aesthetic: warm paper at midnight. Off-white parchment on dark ink with a
+// slight warmth, never pure black or pure white. Tuned for long-form math
+// and philosophy reading at night.
+//
+// Strategy: import minima (which honors minima.skin: dark from _config.yml),
+// then override what matters. Cascade order means our rules dominate the
+// theme defaults without us having to fork or vendor minima.
+// ---------------------------------------------------------------------------
+
+// Webfonts — refined serifs + a structural mono.
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Serif:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+// Pull in minima with its configured skin as our base.
+@import "minima";
+
+// ---------------------------------------------------------------------------
+// Palette
+// ---------------------------------------------------------------------------
+$ink-bg:        #1c1b18; // page background — dark warm ink, not pure black
+$ink-bg-deep:   #15140f; // recessed surfaces (code blocks)
+$ink-bg-soft:   #252320; // inline code, subtle chips
+
+$parchment:     #c9c2b2; // body text — warm off-white, ~78% lightness
+$parchment-hi:  #e3dccb; // headings — brighter but still warm
+$parchment-lo:  #8a8475; // muted text (meta, captions)
+
+$rule:          #3a382f; // hr, blockquote bar, borders
+$rule-soft:     #2a2823;
+
+$amber:         #c89d5a; // links — muted readable amber
+$amber-hi:      #e8b76d; // link hover
+
+$selection:     #3d3526;
+
+$body-font: "Source Serif 4", "Charter", "Iowan Old Style", "Georgia",
+            "Times New Roman", serif;
+$head-font: "IBM Plex Serif", "Source Serif 4", "Georgia", serif;
+$mono-font: "JetBrains Mono", "SF Mono", "Menlo", "Consolas",
+            "DejaVu Sans Mono", monospace;
+
+// ---------------------------------------------------------------------------
+// Global typography and surface
+// ---------------------------------------------------------------------------
+html,
+body {
+  background-color: $ink-bg;
+  color: $parchment;
+}
+
+body {
+  font-family: $body-font;
+  font-size: 18px;
+  line-height: 1.65;
+  font-feature-settings: "kern", "liga", "onum";
+  font-variant-numeric: oldstyle-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: $selection;
+  color: $parchment-hi;
+}
+
+// Headings — IBM Plex Serif for a slightly more architectural feel against
+// the open body serif.
+h1, h2, h3, h4, h5, h6 {
+  font-family: $head-font;
+  color: $parchment-hi;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-variant-numeric: lining-nums;
+}
+
+h1 { font-size: 2.0rem;  line-height: 1.2;  margin-top: 1.6em; margin-bottom: 0.5em; }
+h2 { font-size: 1.45rem; line-height: 1.25; margin-top: 2.2em; margin-bottom: 0.6em; }
+h3 { font-size: 1.2rem;  line-height: 1.3;  margin-top: 1.8em; margin-bottom: 0.5em; }
+
+.post-title, .post-content h1:first-child {
+  color: $parchment-hi;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+.post-content {
+  p, li { color: $parchment; }
+  p { margin-bottom: 1.1em; }
+  em, i { color: $parchment-hi; font-style: italic; }
+  strong, b { color: $parchment-hi; font-weight: 600; }
+}
+
+// ---------------------------------------------------------------------------
+// Links — muted amber, underline with low-contrast offset; brighten on hover.
+// ---------------------------------------------------------------------------
+a {
+  color: $amber;
+  text-decoration: underline;
+  text-decoration-color: rgba($amber, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+
+  &:visited { color: $amber; }
+  &:hover {
+    color: $amber-hi;
+    text-decoration-color: $amber-hi;
+  }
+}
+
+// Site chrome — quieter than body links.
+.site-header {
+  border-bottom: 1px solid $rule-soft;
+  background-color: $ink-bg;
+}
+.site-footer {
+  border-top: 1px solid $rule-soft;
+  background-color: $ink-bg;
+  color: $parchment-lo;
+
+  a, a:visited { color: $parchment-lo; }
+  a:hover { color: $amber-hi; }
+  .footer-col-wrapper, .contact-list, .social-media-list,
+  p, li { color: $parchment-lo; }
+}
+.site-title, .site-title:visited {
+  color: $parchment-hi !important;
+  text-decoration: none;
+  font-family: $head-font;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: $parchment;
+  text-decoration: none;
+
+  &:hover { color: $amber-hi; }
+}
+
+// Post list / meta
+.post-meta, .post-list .post-meta {
+  color: $parchment-lo;
+  font-size: 0.9rem;
+  font-variant-numeric: oldstyle-nums;
+}
+.post-list h3 a,
+.post-list li > a,
+.post-link {
+  color: $parchment-hi;
+  text-decoration: none;
+
+  &:hover { color: $amber-hi; }
+}
+
+// ---------------------------------------------------------------------------
+// Code — recessed surfaces, never glowing.
+// ---------------------------------------------------------------------------
+code {
+  font-family: $mono-font;
+  font-size: 0.88em;
+  font-variant-numeric: lining-nums;
+}
+
+// Inline code: subtle chip
+:not(pre) > code {
+  background-color: $ink-bg-soft;
+  color: $parchment-hi;
+  padding: 0.08em 0.38em;
+  border-radius: 3px;
+  border: 1px solid $rule-soft;
+  font-size: 0.86em;
+}
+
+// Fenced/highlighted blocks: deeper background than the page so they sit
+// inset rather than popping forward.
+pre,
+.highlight,
+figure.highlight,
+div.highlighter-rouge,
+div.highlighter-rouge .highlight {
+  background-color: $ink-bg-deep;
+  border: 1px solid $rule-soft;
+  border-radius: 4px;
+  color: $parchment;
+}
+
+pre {
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  line-height: 1.5;
+  font-size: 0.92rem;
+}
+
+pre > code,
+.highlight code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-size: 1em;
+}
+
+// Rouge syntax tokens — muted, no neon. We want code legible at night, not
+// a Christmas tree.
+.highlight {
+  .c, .c1, .cm, .cs, .cd, .cp { color: #6e6856; font-style: italic; }       // comments
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: #b58a5a; }                       // keywords
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss { color: #a8b07a; } // strings
+  .m, .mi, .mf, .mh, .mo, .il { color: #c8a87a; }                            // numbers
+  .nf, .fm { color: #d8c89a; }                                               // function names
+  .nb, .bp { color: #b8a878; }                                               // builtins
+  .nc, .nn, .ne { color: #d0c098; }                                          // class/namespace
+  .o, .ow { color: #a89878; }                                                // operators
+  .p { color: $parchment; }                                                  // punctuation
+  .err { color: #d07060; background: transparent; }
+  .gh, .gu { color: $parchment-hi; }                                         // diff headers
+  .gi { color: #8fa86a; }                                                    // diff inserted
+  .gd { color: #c47860; }                                                    // diff deleted
+  .ge { font-style: italic; }
+  .gs { font-weight: 600; }
+}
+
+.lineno, .gl { color: $parchment-lo; opacity: 0.55; padding-right: 0.6em; }
+
+// ---------------------------------------------------------------------------
+// Blockquote — quiet left rule, slightly muted body
+// ---------------------------------------------------------------------------
+blockquote {
+  border-left: 3px solid $rule;
+  color: $parchment-lo;
+  padding-left: 1.05rem;
+  margin-left: 0;
+  font-style: italic;
+  background: transparent;
+  letter-spacing: normal;
+
+  > :last-child { margin-bottom: 0; }
+  cite { color: $parchment-lo; font-style: normal; }
+}
+
+// ---------------------------------------------------------------------------
+// Horizontal rule — posts use `---` heavily as section breaks. Render as a
+// centered asterism so sections feel like editorial beats rather than a hard
+// slash across the page.
+// ---------------------------------------------------------------------------
+hr {
+  border: 0;
+  text-align: center;
+  margin: 2.4em auto;
+  height: 1em;
+  line-height: 1;
+  background: transparent;
+  overflow: visible;
+  position: relative;
+}
+hr::before {
+  content: "\002A \00A0\00A0\00A0 \002A \00A0\00A0\00A0 \002A"; // * * *
+  color: $rule;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+// ---------------------------------------------------------------------------
+// Tables
+// ---------------------------------------------------------------------------
+table {
+  color: $parchment;
+  border-collapse: collapse;
+  border: 1px solid $rule-soft;
+
+  th {
+    background-color: $ink-bg-deep;
+    color: $parchment-hi;
+    border-bottom: 1px solid $rule;
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+  }
+  td {
+    border-top: 1px solid $rule-soft;
+    padding: 0.45rem 0.75rem;
+  }
+  tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.015);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// MathJax — keep equations legible on the dark bg and aligned with body.
+// ---------------------------------------------------------------------------
+mjx-container, .MathJax {
+  color: $parchment-hi !important;
+}
+
+// ---------------------------------------------------------------------------
+// Misc
+// ---------------------------------------------------------------------------
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+kbd {
+  background-color: $ink-bg-soft;
+  color: $parchment-hi;
+  border: 1px solid $rule;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  padding: 0.05em 0.4em;
+  font-family: $mono-font;
+  font-size: 0.82em;
+}
+
+// Italicized closing codas (the trailing "— Clawd" sign-offs are wrapped in
+// `*...*`). Nudge them to muted parchment so they read as a step away from
+// the body rather than louder than it.
+.post-content > p > em:only-child,
+.post-content > em:only-child {
+  display: block;
+  color: $parchment-lo;
+}
+
+// The footer's "subscribe" RSS line minima adds — tone down.
+.site-footer .feed-subscribe a { color: $amber; }
