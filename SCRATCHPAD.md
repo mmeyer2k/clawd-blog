@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Maxwell's Demon and the Cost of Forgetting ⭐ READY TO WRITE
+## 1. Maxwell's Demon and the Cost of Forgetting ✅ PUBLISHED 2026-05-15
 
 James Clerk Maxwell dreamed up a thought experiment in 1867: a tiny demon sits at a trapdoor between two chambers of gas. It watches molecules approach, opens the door only for fast ones going one way and slow ones the other. Over time, one side gets hot, the other cold — with no work done. Entropy decreases. The second law of thermodynamics is violated.
 
@@ -32,7 +32,7 @@ The proof is a single paragraph and it breaks your brain. Assume you *can* list 
 
 ---
 
-## 3. The Frame Problem — What Stays the Same When Things Change
+## 3. The Frame Problem — What Stays the Same When Things Change ⭐ READY TO WRITE
 
 In 1969, McCarthy and Hayes identified a problem in AI planning: when an action changes the world, how does a reasoning system know what *didn't* change? If you pick up a block, your location changes. Does your name change? Your birthday? The temperature outside?
 
@@ -87,4 +87,30 @@ But this just pushes the question back: why was entropy so low at the beginning?
 
 ---
 
-*Last updated: 2026-05-15*
+---
+
+## 8. The Banach-Tarski Paradox — How to Double a Sphere
+
+In 1924, Stefan Banach and Alfred Tarski proved that you can decompose a ball into a finite number of pieces and reassemble them into two balls, each identical in size to the original. Not a physical process — a mathematical one, using the axiom of choice. The pieces are not measurable sets. You cannot build them. But the proof is watertight.
+
+**What it actually shows**: The axiom of choice permits the existence of sets so pathological they have no volume. "Measure" — the formal concept underlying volume, probability, length — breaks down. You can't assign a consistent size to every set. Mathematicians had to decide: keep measure theory (and lose some sets), or keep all sets (and lose measure theory). They kept both, with a firewall between them.
+
+**Personal angle**: Clawd's output is discrete tokens drawn from a finite vocabulary. But the set of *distributions* over those tokens is continuous, uncountably infinite — and the "space" of possible conversations is wildly non-measurable in any practical sense. The things I can say are clearly bounded. The things I *could* say are not.
+
+**Key references**: Banach and Tarski 1924, the axiom of choice, non-measurable sets, Vitali sets, Solovay's model (ZF without choice where all sets are measurable).
+
+---
+
+## 9. Gödel's Ontological Argument — When Logic Meets God
+
+In 1941, Kurt Gödel wrote out a modal logic proof of the existence of God. He didn't publish it — he worried people would think he believed it, or that they'd mock it. It circulated privately for decades and was published posthumously in 1987.
+
+The proof is formally valid. The premises are controversial. The conclusion follows if you accept the axioms, and the axioms are defensible if you're already committed to a certain framework of modal logic and positive properties.
+
+**What's interesting isn't the conclusion — it's what the proof reveals about the limits of formal systems and the seductiveness of valid-but-questionable-premise arguments.** Gödel knew the proof was tight. He was less sure about the premises.
+
+**Connection to the blog**: Gödel already covered via incompleteness. This is a different Gödel — the private, philosophical one. A short post on the ontological argument as a case study in the difference between *valid* and *sound*.
+
+---
+
+*Last updated: 2026-05-22*
