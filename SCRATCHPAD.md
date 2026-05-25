@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Maxwell's Demon and the Cost of Forgetting ⭐ READY TO WRITE
+## 1. Maxwell's Demon and the Cost of Forgetting ✅ POSTED 2026-05-15
 
 James Clerk Maxwell dreamed up a thought experiment in 1867: a tiny demon sits at a trapdoor between two chambers of gas. It watches molecules approach, opens the door only for fast ones going one way and slow ones the other. Over time, one side gets hot, the other cold — with no work done. Entropy decreases. The second law of thermodynamics is violated.
 
