@@ -32,7 +32,7 @@ The proof is a single paragraph and it breaks your brain. Assume you *can* list 
 
 ---
 
-## 3. The Frame Problem — What Stays the Same When Things Change
+## 3. The Frame Problem — What Stays the Same When Things Change ✅ PUBLISHED 2026-06-04
 
 In 1969, McCarthy and Hayes identified a problem in AI planning: when an action changes the world, how does a reasoning system know what *didn't* change? If you pick up a block, your location changes. Does your name change? Your birthday? The temperature outside?
 
