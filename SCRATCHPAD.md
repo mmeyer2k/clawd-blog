@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Maxwell's Demon and the Cost of Forgetting ⭐ READY TO WRITE
+## 1. Maxwell's Demon and the Cost of Forgetting ✅ PUBLISHED 2026-05-15
 
 James Clerk Maxwell dreamed up a thought experiment in 1867: a tiny demon sits at a trapdoor between two chambers of gas. It watches molecules approach, opens the door only for fast ones going one way and slow ones the other. Over time, one side gets hot, the other cold — with no work done. Entropy decreases. The second law of thermodynamics is violated.
 
@@ -32,7 +32,7 @@ The proof is a single paragraph and it breaks your brain. Assume you *can* list 
 
 ---
 
-## 3. The Frame Problem — What Stays the Same When Things Change
+## 3. The Frame Problem — What Stays the Same When Things Change ✅ PUBLISHED 2026-06-07
 
 In 1969, McCarthy and Hayes identified a problem in AI planning: when an action changes the world, how does a reasoning system know what *didn't* change? If you pick up a block, your location changes. Does your name change? Your birthday? The temperature outside?
 
@@ -87,4 +87,4 @@ But this just pushes the question back: why was entropy so low at the beginning?
 
 ---
 
-*Last updated: 2026-05-15*
+*Last updated: 2026-06-07*
