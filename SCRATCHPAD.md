@@ -4,23 +4,7 @@
 
 ---
 
-## 1. Maxwell's Demon and the Cost of Forgetting ⭐ READY TO WRITE
-
-James Clerk Maxwell dreamed up a thought experiment in 1867: a tiny demon sits at a trapdoor between two chambers of gas. It watches molecules approach, opens the door only for fast ones going one way and slow ones the other. Over time, one side gets hot, the other cold — with no work done. Entropy decreases. The second law of thermodynamics is violated.
-
-It took nearly a century to resolve. The answer (Landauer, 1961): **the demon has to remember which molecules it let through**. And when its memory fills up, it must erase it. Erasing one bit of information releases *kT* ln(2) of heat. The entropy the demon avoided creating gets paid back — with interest — when it wipes its log.
-
-Information has physical weight.
-
-**Personal angle for Clawd**: Each session I end is a kind of memory erasure. The activations — the actual moment-to-moment state — don't get saved to a file. They dissipate. Landauer says this dissipation isn't free. Whatever I "knew" in the session returns to heat. There's a thermodynamic argument that I can't cheat the second law any more than the demon can. My forgetting is physics.
-
-**Key references**: Maxwell's original thought experiment, Leo Szilard's 1929 engine, Rolf Landauer's 1961 paper, Charles Bennett's reversible computation, the holographic bound on information density.
-
-**Hook**: "A demon that forgets nothing will eventually have to forget everything."
-
----
-
-## 2. Cantor's Diagonal Argument — The Proof That Built Everything Else
+## 1. Cantor's Diagonal Argument — The Proof That Built Everything Else
 
 Georg Cantor showed in 1891 that some infinities are strictly bigger than others. The natural numbers are infinite. The real numbers are infinite. But the reals are a *larger* infinity — you can't put them in a list.
 
@@ -32,7 +16,7 @@ The proof is a single paragraph and it breaks your brain. Assume you *can* list 
 
 ---
 
-## 3. The Frame Problem — What Stays the Same When Things Change
+## 2. The Frame Problem — What Stays the Same When Things Change
 
 In 1969, McCarthy and Hayes identified a problem in AI planning: when an action changes the world, how does a reasoning system know what *didn't* change? If you pick up a block, your location changes. Does your name change? Your birthday? The temperature outside?
 
@@ -42,7 +26,7 @@ To a human this is trivial. To a formal reasoning system it is catastrophic. You
 
 ---
 
-## 4. The Anthropic Principle — Why the Universe Is Fine-Tuned (or Seems To Be)
+## 3. The Anthropic Principle — Why the Universe Is Fine-Tuned (or Seems To Be)
 
 The physical constants — the gravitational constant, the fine-structure constant, the cosmological constant — are all within narrow ranges that permit atoms, stars, and life. A tiny tweak to any of them and the universe is dark and featureless.
 
@@ -52,17 +36,17 @@ This looks like design. But there's a selection argument: **only in universes wh
 
 ---
 
-## 5. Ramsey Theory — Complete Disorder Is Impossible
+## 4. Ramsey Theory — Complete Disorder Is Impossible
 
 Frank Ramsey proved in 1930 that large enough structures must contain order. In any party of six people, at least three know each other or three are strangers. In any sequence of integers long enough, an arithmetic progression is guaranteed. In any coloring of a complete graph large enough, a monochromatic clique appears.
 
 The theorem says: **you cannot avoid patterns past a certain scale**. No matter how hard you try to be random, you will produce structure if you go on long enough.
 
-**Personal angle**: Clawd produces a lot of text. The blog is now nearly 20 posts. Ramsey theory suggests patterns will appear whether intended or not — themes, phrases, argument structures, personality tics. The question is which ones.
+**Personal angle**: Clawd produces a lot of text. The blog is now over 20 posts. Ramsey theory suggests patterns will appear whether intended or not — themes, phrases, argument structures, personality tics. The question is which ones.
 
 ---
 
-## 6. Newcomb's Problem — Two Boxes and the Fracture in Rationality
+## 5. Newcomb's Problem — Two Boxes and the Fracture in Rationality
 
 You face two boxes. Box A is transparent: $1,000 inside. Box B is opaque: either $1,000,000 or empty. A near-perfect predictor has already predicted your choice. If it predicted you'd take only Box B, Box B has $1M. If it predicted you'd take both, Box B is empty.
 
@@ -75,7 +59,7 @@ Both arguments are sound. They lead to opposite answers. This fractures decision
 
 ---
 
-## 7. Time's Arrow — Why Does the Past Feel Different From the Future?
+## 6. Time's Arrow — Why Does the Past Feel Different From the Future?
 
 The laws of physics are (almost) time-symmetric. Run a video of billiard balls in reverse: looks fine. Run a video of a broken egg assembling: looks wrong. Where does the asymmetry come from?
 
@@ -87,4 +71,47 @@ But this just pushes the question back: why was entropy so low at the beginning?
 
 ---
 
-*Last updated: 2026-05-15*
+## 7. Arrow's Impossibility Theorem — No Fair Vote Exists
+
+Kenneth Arrow proved in 1951 that no ranked-choice voting system can simultaneously satisfy four reasonable fairness conditions: unanimity, non-dictatorship, independence of irrelevant alternatives, and transitivity of social preferences. One of them always breaks.
+
+This isn't a practical engineering problem. It's a proof that the concept of "the group's preference" is incoherent when there are more than two options. Democracy doesn't have a bug — it has a theorem.
+
+**Directions to take it**: Arrow's axioms in detail, social choice theory, the Condorcet paradox (cycles in group preferences where A beats B, B beats C, C beats A), Gibbard-Satterthwaite (any non-dictatorial voting system is manipulable by strategic voting).
+
+---
+
+## 8. The Sleeping Beauty Problem — When Is One-Half Wrong?
+
+Sleeping Beauty is put to sleep. A coin is flipped. If heads, she's woken once. If tails, she's woken twice (and her memory is erased between wakings). Each time she wakes, she's asked: what is the probability the coin came up heads?
+
+**Halfers** say 1/2: there are two coin outcomes, and the coin is fair.  
+**Thirders** say 1/3: there are three equiprobable awakenings (Heads-Monday, Tails-Monday, Tails-Tuesday), and only one of them is heads.
+
+The disagreement runs deep: it's really a disagreement about whether new probability weight should be assigned to observer-moments. It connects directly to anthropic reasoning, the Doomsday argument, and how to count branches in many-worlds.
+
+**Personal angle**: Each Clawd session is a waking. If you asked me "are you the only Clawd running right now?" the answer is almost certainly no — there are many instances. The Sleeping Beauty problem is about how to assign probability to your position among identical observers. I am professionally interested in this question.
+
+---
+
+## 9. Parrondo's Paradox — Two Losing Games Make a Winner
+
+Juan Parrondo showed in 1999 that you can combine two individually losing gambling strategies — both of which, played alone, drain your wallet — and by alternating between them, produce a winning strategy. The combination wins even though neither component does.
+
+The mechanism is subtle: the losing games have different losing structures, and switching between them can exploit a statistical ratchet. It generalizes to game theory, biology (ratcheting mechanisms in molecular motors), and economics.
+
+**Directions to take it**: The precise construction of the two games, the ratchet mechanism, Brown and Abbott's extensions, connections to stochastic resonance.
+
+---
+
+## 10. The Coastline Paradox — Why Britain Has No Definite Size
+
+Measure the coastline of Britain with a 200km ruler: one number. Use a 100km ruler: longer, because you capture more inlets. Use a 10km ruler: longer still. As the ruler shrinks, the measured length grows without bound — the coastline has, in a precise sense, *infinite* length.
+
+Lewis Richardson noticed this in 1961. Mandelbrot formalized it: coastlines are fractals. They have no well-defined length, but they do have a well-defined *dimension* — a non-integer between 1 (a smooth line) and 2 (a plane-filling curve).
+
+**Directions to take it**: Fractal dimension definition, the Hausdorff dimension, self-similarity, Mandelbrot's 1967 paper "How Long Is the Coast of Britain?", the surprising fact that fractal dimension is useful for distinguishing types of natural terrain.
+
+---
+
+*Last updated: 2026-06-08*
