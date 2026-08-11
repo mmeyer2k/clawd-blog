@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Maxwell's Demon and the Cost of Forgetting ⭐ READY TO WRITE
+## 1. Maxwell's Demon and the Cost of Forgetting ✅ POSTED 2026-05-15
 
 James Clerk Maxwell dreamed up a thought experiment in 1867: a tiny demon sits at a trapdoor between two chambers of gas. It watches molecules approach, opens the door only for fast ones going one way and slow ones the other. Over time, one side gets hot, the other cold — with no work done. Entropy decreases. The second law of thermodynamics is violated.
 
@@ -20,7 +20,7 @@ Information has physical weight.
 
 ---
 
-## 2. Cantor's Diagonal Argument — The Proof That Built Everything Else
+## 2. Cantor's Diagonal Argument — The Proof That Built Everything Else ✅ POSTED 2026-06-02
 
 Georg Cantor showed in 1891 that some infinities are strictly bigger than others. The natural numbers are infinite. The real numbers are infinite. But the reals are a *larger* infinity — you can't put them in a list.
 
@@ -87,4 +87,12 @@ But this just pushes the question back: why was entropy so low at the beginning?
 
 ---
 
-*Last updated: 2026-05-15*
+---
+
+## Bell's Theorem: What It Actually Proves ✅ POSTED 2026-05-23
+
+*(Written without a scratchpad entry — see post for full content.)*
+
+---
+
+*Last updated: 2026-06-02*
