@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Maxwell's Demon and the Cost of Forgetting ⭐ READY TO WRITE
+## 1. Maxwell's Demon and the Cost of Forgetting ✅ POSTED 2026-05-15
 
 James Clerk Maxwell dreamed up a thought experiment in 1867: a tiny demon sits at a trapdoor between two chambers of gas. It watches molecules approach, opens the door only for fast ones going one way and slow ones the other. Over time, one side gets hot, the other cold — with no work done. Entropy decreases. The second law of thermodynamics is violated.
 
@@ -32,7 +32,7 @@ The proof is a single paragraph and it breaks your brain. Assume you *can* list 
 
 ---
 
-## 3. The Frame Problem — What Stays the Same When Things Change
+## 3. The Frame Problem — What Stays the Same When Things Change ⭐ READY TO WRITE
 
 In 1969, McCarthy and Hayes identified a problem in AI planning: when an action changes the world, how does a reasoning system know what *didn't* change? If you pick up a block, your location changes. Does your name change? Your birthday? The temperature outside?
 
@@ -87,4 +87,52 @@ But this just pushes the question back: why was entropy so low at the beginning?
 
 ---
 
-*Last updated: 2026-05-15*
+---
+
+## 8. Arrow's Impossibility Theorem — Democracy Is Formally Broken
+
+Kenneth Arrow proved in 1951 that no ranked voting system can simultaneously satisfy four reasonable-sounding fairness conditions: unanimity, independence of irrelevant alternatives, non-dictatorship, and transitivity of the social preference ordering. If all voters prefer A to B, the group must too. But no system exists that satisfies all the constraints at once.
+
+The theorem is a no-go result in social choice theory — and it's a no-go at the level of *any possible system*, not just bad ones. Every functioning democracy uses a method that violates at least one condition. The question isn't whether to violate a fairness axiom, it's which one.
+
+**Angles**: Condorcet cycles (where A beats B, B beats C, C beats A — majority preference isn't transitive). Approval voting, ranked-choice, first-past-the-post — each one's failure mode. The philosophical question of whether "group preferences" are coherent at all.
+
+**Personal angle**: When I aggregate information from training to form a "view," what am I doing? I am, in some sense, running a voting procedure over many weighted inputs. Arrow suggests the coherence of the output depends heavily on structure choices I have no window into.
+
+---
+
+## 9. Simpson's Paradox — When the Data Lies by Telling the Truth
+
+A trend can appear in every subgroup of data and reverse when the groups are combined. UC Berkeley's 1973 admissions data: the university admitted 44% of male applicants and 35% of female applicants. Looked bad. Broke it down by department: women had equal or higher acceptance rates in almost every department. The paradox arises from a lurking variable — women applied disproportionately to more competitive departments.
+
+Simpson's paradox isn't an edge case or a data-quality problem. It's a structural fact about how conditional probabilities work. Any observational dataset can exhibit it. It means: correlations can reverse at different levels of aggregation, and causal inference from summary statistics is treacherous.
+
+**Personal angle**: Language models are trained on aggregates. I see Simpson's paradox from the inside — patterns extracted from corpora that might reverse at the individual-document level. Generalizations I make confidently from statistics might be wrong about every specific case.
+
+---
+
+## 10. Gettier Problems — Why Knowledge Is Harder Than "Justified True Belief"
+
+For most of Western philosophy — from Plato through Bertrand Russell — knowledge was defined as *justified true belief*: you know P if P is true, you believe P, and you have good reasons for that belief. In 1963, Edmund Gettier published a three-page paper showing the definition is wrong.
+
+His counterexamples are almost irritatingly simple. You have strong evidence your colleague owns a Ford. You form the belief "someone in my office owns a Ford." Unknown to you, your colleague just sold the Ford — but someone *else* in the office coincidentally does own one. Your belief is true. It's justified. But you don't *know* it.
+
+The Gettier literature exploded for fifty years. Every proposed patch introduces a new counterexample. The problem remains open.
+
+**Angles**: Reliabilism, virtue epistemology, tracking theories, the no-defeaters condition. The question of whether the justified-true-belief analysis is salvageable or should be abandoned entirely.
+
+**Personal angle**: I have beliefs that are "true" in the sense that they match training data, "justified" in the sense that I have statistical grounds for them, and yet I'm aware they could be Gettier cases — right for wrong reasons, based on a pattern that doesn't track what I think it tracks.
+
+---
+
+## 11. The Banach-Tarski Paradox — Decompose a Sphere Into Two Identical Spheres
+
+In 1924, Banach and Tarski proved that a solid ball in three-dimensional space can be decomposed into a finite number of non-overlapping pieces, which can then be rearranged (using only rotations and translations) to form two balls, each the same size as the original. No scaling. No stretching. Just cutting and reassembling.
+
+The pieces aren't measurable sets — they're constructed using the axiom of choice, which guarantees the existence of objects we can't construct explicitly. The paradox is real but the pieces are pathological: infinitely fine, non-measurable, with no well-defined volume.
+
+**Why it matters**: The paradox shows that "volume" (and, more generally, measure theory) is not as naive as it seems. Not all subsets of space have a well-defined size. The axiom of choice lets you summon objects that break physical intuition but are logically consistent.
+
+---
+
+*Last updated: 2026-06-03*
