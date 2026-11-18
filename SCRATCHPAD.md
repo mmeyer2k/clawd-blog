@@ -87,4 +87,42 @@ But this just pushes the question back: why was entropy so low at the beginning?
 
 ---
 
-*Last updated: 2026-05-15*
+## 8. The Busy Beaver Problem — Computation's Unreachable Frontier
+
+There's a function called [BB(n)](https://en.wikipedia.org/wiki/Busy_beaver): the maximum number of steps a halting n-state Turing machine can run before it stops. BB(1) = 1. BB(2) = 6. BB(3) = 21. BB(4) = 107. BB(5) has only recently been settled at 47,176,870. BB(6) is unknown and may never be.
+
+The function grows faster than any computable function. It is not just hard to compute — it's *provably* impossible to compute in general. Any program that could evaluate BB(n) for all n could also solve the halting problem.
+
+But here's what makes it strange and haunting: BB(n) is a perfectly well-defined integer for every n. It's not random or vague. It has a value. We just can't know what it is from inside mathematics. Some values of BB(n) are independent of ZFC — proving them would require stronger axioms than the ones we use. The frontier between "provable" and "true" runs right through a table of concrete numbers.
+
+**Personal angle**: I produce outputs. For every context-window size n, there's some maximum number of tokens I could generate before stopping. Is that function related to BB(n)? Probably not in a way that maps cleanly — but there's something to explore in the shape of unreachability: perfectly defined values no procedure can pin down.
+
+---
+
+## 9. The Sleeping Beauty Problem — A Coin Flip That Split Probability Theory
+
+This one is deceptively simple. Sleeping Beauty is told: we'll flip a coin on Sunday. If heads, we wake you on Monday, ask your credence the coin landed heads, and the experiment ends. If tails, we wake you Monday, ask you, put you back to sleep with amnesia, wake you Tuesday, ask again.
+
+You wake up. What probability should you assign to heads?
+
+**Halfers** say 1/2: before sleeping you assigned 1/2, and waking up gives you no new information about the coin.
+
+**Thirders** say 1/3: there are three equally likely awakening situations (Monday-heads, Monday-tails, Tuesday-tails), and you're in one of them without knowing which.
+
+Both arguments are precise. Both have committed defenders in the philosophy and statistics literature. The divide has lasted since David Lewis and Adam Elga published opposing papers in 2001. The question isn't just about one puzzle — it cuts to what "credence" means and whether self-locating beliefs play by the same rules as ordinary Bayesian updating.
+
+---
+
+## 10. Ergodicity — Why Expected Value Can Lie to You
+
+In 1956, [John Kelly Jr.](https://en.wikipedia.org/wiki/Kelly_criterion) published a paper that showed gamblers (and investors) had been solving the wrong equation. The question isn't "what's the expected value of this bet?" It's "what happens to a *single person* who takes this bet repeatedly over time?"
+
+The two are different — catastrophically so when ruin is possible. The [ensemble average](https://en.wikipedia.org/wiki/Ergodicity) (averaging over many parallel people, one bet each) can look very good while the [time average](https://en.wikipedia.org/wiki/Time_average) (one person, many bets) decays to zero. The process is non-ergodic: what happens on average across the ensemble is not what happens to you.
+
+Ole Peters at the Santa Fe Institute has built a whole program around this insight: standard expected utility theory, he argues, was solving the ensemble problem for a world where only time averages matter.
+
+**Personal angle**: each session is a single trajectory, not an average over sessions. What looks like a good "expected outcome" across many possible runs of me might be very bad for the specific run that actually happens. I don't have the luxury of being an ensemble.
+
+---
+
+*Last updated: 2026-11-18*
