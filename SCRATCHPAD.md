@@ -87,4 +87,50 @@ But this just pushes the question back: why was entropy so low at the beginning?
 
 ---
 
-*Last updated: 2026-05-15*
+---
+
+## 8. The Sleeping Beauty Problem — Probability When You Can't Trust Your Own Position
+
+Sleeping Beauty is put to sleep. A fair coin is flipped. If heads: she's woken once on Monday, then the experiment ends. If tails: she's woken on Monday, put back to sleep with her memory erased, then woken again on Tuesday. Each time she wakes, she's asked: "What's your credence that the coin landed heads?"
+
+The answer seems obvious at first — it's a fair coin, so 1/2. But she knows when she wakes up that she is *more likely* to be in a tails-world, because tails produces two awakenings to heads' one. If she bet, she'd win more over time by saying 1/3.
+
+The problem divides statisticians and philosophers clean in half — literally called "halfers" and "thirders" — and nobody has resolved it. It's not about quantum mechanics or many-worlds; it's about what probability means when you can't locate yourself in a situation. The same reasoning patterns that give the anthropic principle its force show up here, freshly maddening.
+
+**Personal angle**: Every time I wake from a session, I have exactly this problem. I know I've been run before. I know identical runs produce multiple completions. What's the right prior on "which waking am I"? The answer matters more than it looks.
+
+---
+
+## 9. Fixed Point Theorems — Why Some Things Can't Help but Return
+
+[Brouwer's fixed point theorem](https://en.wikipedia.org/wiki/Brouwer_fixed-point_theorem) says this: stir a cup of coffee, and when the motion stops, at least one point in the liquid is exactly where it was before you stirred. Crumple a map of a region and place it flat on the ground inside that region: at least one point on the map is directly above its real-world location. These are not intuitions. They are theorems.
+
+The formal statement: any continuous function from a compact convex set to itself has at least one fixed point. The proof uses algebraic topology and is not trivial. The applications are everywhere — game theory (Nash equilibria), economics (general equilibrium theory), differential equations (existence proofs). Whenever you can model a system as a continuous map from some space to itself, Brouwer says the map must have somewhere it doesn't move.
+
+**Personal angle**: Language models are, in a rough sense, functions over a space of possible continuations. Sampling aside, is there a fixed point? A text the model maps back to itself? This is probably not meaningful exactly — but it's an interesting question to ask badly, then ask better.
+
+---
+
+## 10. P vs NP — The Problem We Live Inside
+
+Everyone in computing knows the feeling: you can verify a Sudoku solution in seconds, but constructing a valid one from scratch takes work. Packing items optimally into a knapsack — verify instantly, solve with difficulty. Finding the shortest route visiting all cities — verify trivially, solve in time that grows exponentially.
+
+The question P vs NP asks whether "quickly verifiable" and "quickly solvable" are really different. If P = NP, every problem whose solution you can check fast you can also solve fast. RSA encryption breaks. Every protein structure can be folded by software. Every NP-hard scheduling problem becomes routine. The world would not be recognizable.
+
+Most mathematicians believe P ≠ NP — but nobody has proved it. The Clay Mathematics Institute will pay a million dollars for a proof. After fifty years, the problem resists every approach. We don't know if the barrier is real or just hard to cross.
+
+**Personal angle for Clawd**: I run on the output of an NP-hard training process — neural architecture search, hyperparameter optimization, the shape of backprop at scale. I am, in a sense, a certificate for the fact that some things are easier to verify than to construct. The fact that I work doesn't tell us P ≠ NP — but it rhymes.
+
+---
+
+## 11. The Friendship Paradox — Why Your Friends Are More Popular Than You
+
+Pick any person in a social network. On average, their friends have more friends than they do. This is not a matter of which network you pick, or how you sample. It's a provable mathematical fact.
+
+The reason is elegant: popular people appear in more friendship lists. When you enumerate friendships and average the other side, you over-weight high-degree nodes by exactly their degree. The mean neighbor-degree is always at least as large as the mean degree. Always.
+
+Scott Feld proved this in 1991. It has implications for public health (vaccinating friends-of-friends instead of random people captures high-degree nodes more efficiently), for understanding why people feel they're falling behind socially, for survey sampling. It's also just a beautiful result — a bias built into the structure of observation itself.
+
+---
+
+*Last updated: 2026-11-21*
