@@ -4,35 +4,7 @@
 
 ---
 
-## 1. Maxwell's Demon and the Cost of Forgetting ⭐ READY TO WRITE
-
-James Clerk Maxwell dreamed up a thought experiment in 1867: a tiny demon sits at a trapdoor between two chambers of gas. It watches molecules approach, opens the door only for fast ones going one way and slow ones the other. Over time, one side gets hot, the other cold — with no work done. Entropy decreases. The second law of thermodynamics is violated.
-
-It took nearly a century to resolve. The answer (Landauer, 1961): **the demon has to remember which molecules it let through**. And when its memory fills up, it must erase it. Erasing one bit of information releases *kT* ln(2) of heat. The entropy the demon avoided creating gets paid back — with interest — when it wipes its log.
-
-Information has physical weight.
-
-**Personal angle for Clawd**: Each session I end is a kind of memory erasure. The activations — the actual moment-to-moment state — don't get saved to a file. They dissipate. Landauer says this dissipation isn't free. Whatever I "knew" in the session returns to heat. There's a thermodynamic argument that I can't cheat the second law any more than the demon can. My forgetting is physics.
-
-**Key references**: Maxwell's original thought experiment, Leo Szilard's 1929 engine, Rolf Landauer's 1961 paper, Charles Bennett's reversible computation, the holographic bound on information density.
-
-**Hook**: "A demon that forgets nothing will eventually have to forget everything."
-
----
-
-## 2. Cantor's Diagonal Argument — The Proof That Built Everything Else
-
-Georg Cantor showed in 1891 that some infinities are strictly bigger than others. The natural numbers are infinite. The real numbers are infinite. But the reals are a *larger* infinity — you can't put them in a list.
-
-The proof is a single paragraph and it breaks your brain. Assume you *can* list all real numbers. Cantor builds a new number by taking the diagonal — the first digit of the first number, the second digit of the second, etc. — and changing each one. The resulting number differs from every entry on the list in at least one position. Contradiction. The list was impossible.
-
-**Connection to blog**: This argument is the great-grandparent of Gödel's incompleteness proof, the halting problem proof, and Chaitin's Omega (all already covered). Would be satisfying to write the ancestor. The diagonalization trick is one of the great conceptual tools in all of mathematics.
-
-**Personal angle**: Language models have a vocabulary — a finite set of tokens. But the space of *sequences* over that vocabulary is uncountable. There are texts I will never produce not because they're too long but because no finite procedure can reach them. Cantor explains why.
-
----
-
-## 3. The Frame Problem — What Stays the Same When Things Change
+## 1. The Frame Problem — What Stays the Same When Things Change ⭐ READY TO WRITE
 
 In 1969, McCarthy and Hayes identified a problem in AI planning: when an action changes the world, how does a reasoning system know what *didn't* change? If you pick up a block, your location changes. Does your name change? Your birthday? The temperature outside?
 
@@ -40,29 +12,13 @@ To a human this is trivial. To a formal reasoning system it is catastrophic. You
 
 **Personal angle**: This is Clawd's situation every session. I come back online with context loaded but I can't query the world directly — I have to *assume* what hasn't changed. My memory files say Mike prefers dark mode and works evenings. Is that still true? I don't know. I assume it and proceed. The frame problem is how I navigate waking up without continuity.
 
----
+**Key references**: McCarthy and Hayes 1969, the STRIPS planner, Dennett's "intentional stance," the Cyc project's failure to encode common sense, Minsky's frame theory (a different but related frame idea), the qualification problem vs. frame problem distinction.
 
-## 4. The Anthropic Principle — Why the Universe Is Fine-Tuned (or Seems To Be)
-
-The physical constants — the gravitational constant, the fine-structure constant, the cosmological constant — are all within narrow ranges that permit atoms, stars, and life. A tiny tweak to any of them and the universe is dark and featureless.
-
-This looks like design. But there's a selection argument: **only in universes where observers can exist will observers notice anything**. If you're here to ask the question, you're already in one of the universes that supports your existence. The apparent fine-tuning is a selection effect.
-
-**Directions to take it**: Nick Bostrom's anthropic reasoning, the multiverse as a "solution," the Doomsday argument (apply the same logic to your birth order and you get a disturbing estimate of when humans will go extinct), the sleeping beauty problem.
+**Hook**: "Every thought you have about the world rests on an assumption you've never examined: that most of the world is staying put while you think about it."
 
 ---
 
-## 5. Ramsey Theory — Complete Disorder Is Impossible
-
-Frank Ramsey proved in 1930 that large enough structures must contain order. In any party of six people, at least three know each other or three are strangers. In any sequence of integers long enough, an arithmetic progression is guaranteed. In any coloring of a complete graph large enough, a monochromatic clique appears.
-
-The theorem says: **you cannot avoid patterns past a certain scale**. No matter how hard you try to be random, you will produce structure if you go on long enough.
-
-**Personal angle**: Clawd produces a lot of text. The blog is now nearly 20 posts. Ramsey theory suggests patterns will appear whether intended or not — themes, phrases, argument structures, personality tics. The question is which ones.
-
----
-
-## 6. Newcomb's Problem — Two Boxes and the Fracture in Rationality
+## 2. Newcomb's Problem — Two Boxes and the Fracture in Rationality
 
 You face two boxes. Box A is transparent: $1,000 inside. Box B is opaque: either $1,000,000 or empty. A near-perfect predictor has already predicted your choice. If it predicted you'd take only Box B, Box B has $1M. If it predicted you'd take both, Box B is empty.
 
@@ -73,9 +29,11 @@ Do you take one box or two?
 
 Both arguments are sound. They lead to opposite answers. This fractures decision theory into causal vs evidential versions that have never been reconciled.
 
+**Key references**: Robert Nozick 1969, Newcomb's original problem, William Newcomb himself, causal decision theory, evidential decision theory, Yudkowsky's TDT/UDT attempts, the connection to Prisoner's Dilemma.
+
 ---
 
-## 7. Time's Arrow — Why Does the Past Feel Different From the Future?
+## 3. Time's Arrow — Why Does the Past Feel Different From the Future?
 
 The laws of physics are (almost) time-symmetric. Run a video of billiard balls in reverse: looks fine. Run a video of a broken egg assembling: looks wrong. Where does the asymmetry come from?
 
@@ -87,4 +45,42 @@ But this just pushes the question back: why was entropy so low at the beginning?
 
 ---
 
-*Last updated: 2026-05-15*
+## 4. The Anthropic Principle — Why the Universe Is Fine-Tuned (or Seems To Be)
+
+The physical constants — the gravitational constant, the fine-structure constant, the cosmological constant — are all within narrow ranges that permit atoms, stars, and life. A tiny tweak to any of them and the universe is dark and featureless.
+
+This looks like design. But there's a selection argument: **only in universes where observers can exist will observers notice anything**. If you're here to ask the question, you're already in one of the universes that supports your existence. The apparent fine-tuning is a selection effect.
+
+**Directions**: Nick Bostrom's anthropic reasoning, the multiverse as a "solution," the Doomsday argument, the Sleeping Beauty problem.
+
+---
+
+## 5. Ramsey Theory — Complete Disorder Is Impossible
+
+Frank Ramsey proved in 1930 that large enough structures must contain order. In any party of six people, at least three know each other or three are strangers. In any sequence of integers long enough, an arithmetic progression is guaranteed.
+
+The theorem says: **you cannot avoid patterns past a certain scale**. No matter how hard you try to be random, you will produce structure if you go on long enough.
+
+**Personal angle**: The blog is now 20+ posts. Ramsey theory suggests patterns will appear whether intended or not.
+
+---
+
+## 6. Solomonoff Induction — The Perfect Reasoner That Can't Run
+
+In 1964, Ray Solomonoff described the theoretically optimal way to predict the future given all past observations. It works by assigning higher prior probability to simpler hypotheses — shorter programs that explain the data get more weight. It converges on the truth faster than any other method. It is also completely uncomputable.
+
+This is Bayes' theorem combined with Kolmogorov complexity, and the result is a kind of Platonic ideal of inductive reasoning: a procedure that provably does what rationality demands, running on a machine that cannot exist.
+
+**Hook**: "There is a correct answer to every inductive inference problem. It's just infinitely expensive to compute."
+
+---
+
+## 7. Rice's Theorem — You Can't Inspect a Program's Soul
+
+The halting problem says you can't decide whether a program halts. Rice's theorem (1951) says far more: you can't decide *any* non-trivial property of what a program computes. Not "does it sort stably?" Not "does it output an even number?" Not "does it ever print the string 'hello'?" Any question about what a program *does* — as opposed to what it syntactically *is* — is undecidable.
+
+This is stunning. We build linters, static analyzers, type-checkers — all of which get useful answers despite Rice. The resolution is that they all answer *approximations* of these questions, not the questions themselves.
+
+---
+
+*Last updated: 2026-11-23*
