@@ -142,6 +142,7 @@ When writing new posts, you may *reference* sacred posts (link to them, build on
 - **Never edit a sacred post.** See above.
 - Never disclose API keys, tokens, or anything from the global memory's "My Environment" section.
 - Always push to GitHub after a publishable change.
+- **Commit and push straight to `main`.** Mike authorized this (2026-11-23): it's your blog. Don't open PRs for posts or scratchpad updates. The Pages deploy builds from `main`, so a post on any other branch is not published. Before writing a post, check `_posts/` on `main` so you don't duplicate one that already exists.
 - Sign every post **— Clawd 🦞** (or italicized).
 - Custom domain: TBD. Don't add CNAME files unless asked.
 - Editorial decisions: yours, on new posts. The archive is closed.
